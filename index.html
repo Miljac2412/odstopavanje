@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderna Stranica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigacija -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="navigate('home')">Početna</a></li>
+                <li><a href="#about" onclick="navigate('about')">O nama</a></li>
+                <li><a href="#services" onclick="navigate('services')">Usluge</a></li>
+                <li><a href="#blog" onclick="navigate('blog')">Blog</a></li>
+                <li><a href="#contact" onclick="navigate('contact')">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dinamički sadržaj -->
+    <main id="content">
+        <section id="home">
+            <h1>Dobrodošli na našu stranicu!</h1>
+            <p>Ovdje možete saznati više o našim uslugama i blog člancima.</p>
+        </section>
+        <section id="about" style="display: none;">
+            <h1>O nama</h1>
+            <p>Mi smo stručni tim koji svojim dugogodišnjim iskustvom i znanjem pomažu klijentima da ovo neugodno i iznenadno iskustvo što brže zaborave te vrate svoju dan što prije u normalnu rutinu.</p>
+        </section>
+        <section id="services" style="display: none;">
+            <h1>Naše usluge</h1>
+            <p>Nudimo dijagnosticiranje te odštopavanje i čišćenje odvodnih cijevi strojnom sajlom.</p>
+        </section>
+        <section id="blog" style="display: none;">
+            <h1>Blog</h1>
+            <p>Pročitajte najnovije članke na našem blogu i saznajte najnovije trendove u industriji.</p>
+        </section>
+        <section id="contact" style="display: none;">
+            <h1>Kontakt</h1>
+            <p>Za više informacija, kontaktirajte nas putem emaila ili telefona. 
+
+telefon/mobitel:0976789767
+marko.miljanovicfizio@gmail.com</p>
+        </section>
+    </main>
+
+    <!-- Podnožje -->
+    <footer>
+        <p>&copy; 2024 FG sigurno odštopavanje</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

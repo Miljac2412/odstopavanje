@@ -1,0 +1,82 @@
+/* Globalne postavke */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header i navigacija */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Postavljanje stavki u horizontalni red */
+    justify-content: center; /* Poravnanje stavki na sredinu */
+    align-items: center; /* Vertikalno centriranje stavki */
+}
+
+nav ul li {
+    margin: 0 15px; /* Razmak između svakog stavke u horizontalnom rasporedu */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Promjena boje pri prelasku mišem */
+}
+
+nav ul li a:active {
+    color: #0056b3; /* Boja pri kliku */
+}
+
+/* Sekcije */
+section {
+    padding: 2rem;
+    display: none; /* Skriveno po defaultu */
+}
+
+section:target {
+    display: block; /* Prikazuje samo aktivnu sekciju */
+}
+
+/* Naslovi sekcija */
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Podnožje */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsivni dizajn za manje uređaje */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Na manjim uređajima, navigacija postaje vertikalna */
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Razmak između stavki na manjim ekranima */
+    }
+
+    nav ul li a {
+        padding: 10px; /* Smanjivanje razmaka na manjim uređajima */
+    }
+}
